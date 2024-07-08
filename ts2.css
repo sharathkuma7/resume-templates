@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+body{
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;
+}
+.container{
+    background-color: rgb(106, 109, 112);
+    width: 80%;
+    max-width: 1000px;
+    min-height: 100px;
+}
+/***************card_container***************/
+.card_container{
+    margin-top: 20px;
+    background-color: rgb(161, 134, 177);
+    padding: 10px;
+}
+.image>img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
+.card_container>span{
+    font-family: "Montserrat", sans-serif;
+}
+.card_container>h3{
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+    color: rgb(117, 255, 255);
+    font-size: 1rem;
+}
+
+/****************contact_container*****************/
+.contact_info{
+    margin-top: 40px;
+}
+span>i{
+    font-size: 15px;
+    margin: 8px 10px;
+}
+.contact_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact_info::after{
+    content: '';
+    border-bottom: 1px solid;
+    position: absolute;
+    width: 75%;
+    top: 80%;
+    left: 12%;
+}
+
+.profile::before{
+    content: '';
+    border-left: 1px solid;
+    position: absolute;
+    top: 53%;
+    left: 45%;
+    height: 140%;
+    
+}
+.hello{
+    background-color: rgb(107, 66, 66);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 44.2%;
+    bottom:18%;
+    border-radius: 50%;
+}
+
+/*******************skills****************/
+.skills{
+    margin-left: 12px;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.project_details{
+    width: 40%;
+}
